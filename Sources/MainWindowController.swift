@@ -76,11 +76,13 @@ struct MainWindowActions {
     let openMicrophonePrivacySettings: () -> Void
     let startInputTest: () -> Void
     let stopInputTest: () -> Void
+    let checkForUpdates: () -> Void
     let openThirdPartyNotices: () -> Void
     let quitApplication: () -> Void
 
     static func previewActions(
-        onStartInputTest: @escaping () -> Void = {}
+        onStartInputTest: @escaping () -> Void = {},
+        onCheckForUpdates: @escaping () -> Void = {}
     ) -> MainWindowActions {
         MainWindowActions(
             showMenu: {},
@@ -101,6 +103,7 @@ struct MainWindowActions {
             openMicrophonePrivacySettings: {},
             startInputTest: onStartInputTest,
             stopInputTest: {},
+            checkForUpdates: onCheckForUpdates,
             openThirdPartyNotices: {},
             quitApplication: {}
         )
@@ -854,6 +857,7 @@ private final class AudioControlDocumentView: NSView {
         )
         aboutView = AboutMacSoundControlView(
             versionText: snapshot.versionText,
+            onCheckForUpdates: actions.checkForUpdates,
             onOpenThirdPartyNotices: actions.openThirdPartyNotices
         )
         super.init(frame: NSRect(x: 0, y: 0, width: 700, height: 900))
@@ -987,7 +991,7 @@ private final class AudioControlDocumentView: NSView {
         y += microphoneSectionHeight + sectionSpacing
 
         anchorOffsets[.about] = y
-        let aboutSectionHeight: CGFloat = 438
+        let aboutSectionHeight: CGFloat = 510
         aboutView.frame = NSRect(
             x: horizontalInset,
             y: y,
@@ -2279,10 +2283,17 @@ private final class AboutMacSoundControlView: NSView {
     )
     private let firstSeparator = SemanticSeparatorView()
     private let secondSeparator = SemanticSeparatorView()
+    private let updateButton = NSButton(title: "检查更新", target: nil, action: nil)
     private let noticesButton = NSButton(title: "查看第三方许可", target: nil, action: nil)
+    private let onCheckForUpdates: () -> Void
     private let onOpenThirdPartyNotices: () -> Void
 
-    init(versionText: String, onOpenThirdPartyNotices: @escaping () -> Void) {
+    init(
+        versionText: String,
+        onCheckForUpdates: @escaping () -> Void,
+        onOpenThirdPartyNotices: @escaping () -> Void
+    ) {
+        self.onCheckForUpdates = onCheckForUpdates
         self.onOpenThirdPartyNotices = onOpenThirdPartyNotices
         super.init(frame: .zero)
 
@@ -2301,6 +2312,12 @@ private final class AboutMacSoundControlView: NSView {
         versionLabel.textColor = .secondaryLabelColor
         versionLabel.alignment = .center
         addSubview(versionLabel)
+
+        updateButton.bezelStyle = .rounded
+        updateButton.target = self
+        updateButton.action = #selector(checkForUpdates)
+        updateButton.setAccessibilityLabel("检查更新")
+        addSubview(updateButton)
 
         addSubview(informationPanel)
         informationPanel.showsBottomSeparator = false
@@ -2344,11 +2361,17 @@ private final class AboutMacSoundControlView: NSView {
         )
         versionLabel.frame = NSRect(x: 0, y: nameLabel.frame.minY - 23, width: bounds.width, height: 18)
 
+        updateButton.frame = NSRect(
+            x: (bounds.width - 112) / 2,
+            y: versionLabel.frame.minY - 44,
+            width: 112,
+            height: 32
+        )
         let panelWidth = min(580, max(0, bounds.width - 40))
         let panelHeight: CGFloat = 168
         informationPanel.frame = NSRect(
             x: (bounds.width - panelWidth) / 2,
-            y: versionLabel.frame.minY - panelHeight - 20,
+            y: updateButton.frame.minY - panelHeight - 24,
             width: panelWidth,
             height: panelHeight
         )
@@ -2369,6 +2392,10 @@ private final class AboutMacSoundControlView: NSView {
 
     func update(versionText: String) {
         versionLabel.stringValue = versionText
+    }
+
+    @objc private func checkForUpdates() {
+        onCheckForUpdates()
     }
 
     @objc private func openNotices() {

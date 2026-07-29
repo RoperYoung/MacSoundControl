@@ -19,9 +19,9 @@
     <key>CFBundlePackageType</key>
     <string>APPL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>2.3</string>
+	<string>1.0.0</string>
 	<key>CFBundleVersion</key>
-	<string>41</string>
+	<string>100</string>
     <key>LSMinimumSystemVersion</key>
     <string>14.0</string>
     <key>LSMultipleInstancesProhibited</key>
@@ -34,5 +34,13 @@
 	<string>用于按你的开关保持当前系统麦克风在线，并在主界面的声音测试区段实时显示输入音量。音频不会被保存、播放或上传。</string>
 	<key>NSAudioCaptureUsageDescription</key>
 	<string>仅在你调节某个软件的独立音量时，本机实时处理该软件的输出声音。音频不会被录制、保存或上传。</string>
+	<key>SUFeedURL</key>
+	<string>https://roperyoung.github.io/MacSoundControl/appcast.xml</string>
+	<key>SUPublicEDKey</key>
+	<string>DMFHd47DOSFwbEN9eQCWTJixnRWpW8mu0212xbvahdE=</string>
+	<key>SUEnableAutomaticChecks</key>
+	<true/>
+	<key>SUAutomaticallyUpdate</key>
+	<false/>
 </dict>
 </plist>

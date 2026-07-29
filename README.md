@@ -17,6 +17,7 @@ Native macOS menu bar audio control — switch input/output devices, adjust syst
 - 可选显示虚拟音频设备。
 - 麦克风常驻、开机自动启动和当前输入通道重连。
 - 实时声音输入测试，显示 36 段电平、百分比与相对数字满刻度 `dBFS`。
+- 通过 Sparkle 自动检查 GitHub Pages 更新源；用户确认后可在应用内安全下载、验证并安装更新。
 - 原生 AppKit 菜单和主窗口，不使用 WebView。
 
 ## 系统要求
@@ -28,7 +29,7 @@ Native macOS menu bar audio control — switch input/output devices, adjust syst
 
 ## 从源码构建
 
-需要 Xcode Command Line Tools。项目不依赖第三方包管理器。
+需要 Xcode Command Line Tools 和一次可访问 GitHub 的网络连接。项目不依赖第三方包管理器；首次构建会下载并校验固定版本的 Sparkle 官方二进制发行包，之后复用 `Build/Dependencies/` 缓存。
 
 ```bash
 git clone https://github.com/RoperYoung/MacSoundControl.git
@@ -37,13 +38,19 @@ cd MacSoundControl
 open "Build/Release/MacSoundControl.app"
 ```
 
-`build.sh` 默认构建 arm64 + x86_64 Universal App，并使用 ad-hoc 签名。发布维护者可通过 `APP_OUTPUT_PATH` 和 `SIGN_IDENTITY` 显式指定输出位置与 Developer ID。
+`build.sh` 默认构建 arm64 + x86_64 Universal App、嵌入 Sparkle，并使用适合本地运行的 ad-hoc 签名。发布维护者可通过 `APP_OUTPUT_PATH`、`SIGN_IDENTITY` 和 `SPARKLE_ROOT` 显式指定输出位置、Developer ID 与已有 Sparkle 发行目录。
+
+## 应用内更新
+
+MacSoundControl 使用 Sparkle 2。应用会定期读取 GitHub Pages 上的静态 `appcast.xml`；“关于”区段的“检查更新”按钮可随时手动触发同一流程。发现新版时由 Sparkle 的原生界面让用户决定是否下载和安装，默认不会静默自动安装。
+
+更新 ZIP 存放在 GitHub Releases，appcast 由 GitHub Pages 托管。ZIP 同时经过 Apple Developer ID、公证与 Sparkle EdDSA 签名校验，因此不需要自建后台、API、数据库或 GitHub Token。发布标签使用 `vX.Y.Z`，每个版本还必须递增 `CFBundleVersion`。
 
 ## 隐私
 
 - 麦克风和应用音频只在当前 Mac 的内存中实时处理。
 - 音频不会录制、保存、上传，也不依赖服务端。
-- 应用没有遥测、HTTP API 或数据库。
+- 应用没有遥测、自建 HTTP API 或数据库；更新功能只会读取 GitHub Pages 的静态 appcast 和用户选择安装的 GitHub Release 文件，不会发送音频或本机设置。
 
 ## 项目结构
 
@@ -54,6 +61,7 @@ Assets/                  应用图标与菜单栏模板图标
 Info.plist               App 元数据与隐私用途说明
 Entitlements.plist       音频输入 entitlement
 build.sh                 Universal App 本地构建脚本
+scripts/fetch_sparkle.sh 固定版本与校验值的 Sparkle 获取脚本
 THIRD_PARTY_NOTICES.md   第三方来源与许可
 ```
 

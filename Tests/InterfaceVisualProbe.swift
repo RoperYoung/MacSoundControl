@@ -68,6 +68,22 @@ private func firstTextField(
     return nil
 }
 
+private func firstButton(
+    withTitle title: String,
+    in view: NSView
+) -> NSButton? {
+    if let button = view as? NSButton,
+       button.title == title {
+        return button
+    }
+    for subview in view.subviews {
+        if let button = firstButton(withTitle: title, in: subview) {
+            return button
+        }
+    }
+    return nil
+}
+
 private func selectedSidebarTitle(in view: NSView) -> String? {
     guard let outlineView = firstOutlineView(in: view),
           outlineView.selectedRow >= 0,
@@ -300,7 +316,7 @@ enum InterfaceVisualProbe {
                     phase: testPhase
                 ),
                 statusMessage: "麦克风常驻已启动",
-                versionText: "版本 2.3（41）"
+                versionText: "版本 1.0.0（100）"
             )
         }
 
@@ -315,11 +331,17 @@ enum InterfaceVisualProbe {
         )
 
         var automaticStartCount = 0
+        var updateCheckCount = 0
         let mainWindow = MainWindowController(
             snapshot: snapshot,
-            actions: .previewActions {
-                automaticStartCount += 1
-            }
+            actions: .previewActions(
+                onStartInputTest: {
+                    automaticStartCount += 1
+                },
+                onCheckForUpdates: {
+                    updateCheckCount += 1
+                }
+            )
         )
         mainWindow.window?.setContentSize(NSSize(width: 960, height: 700))
         mainWindow.present(destination: .outputVolume)
@@ -517,6 +539,21 @@ enum InterfaceVisualProbe {
                   effectiveRange: nil
               ) as? URL == URL(string: "https://github.com/RoperYoung/MacSoundControl") else {
             fputs("About 缺少可点击的 GitHub 仓库链接\n", stderr)
+            exit(1)
+        }
+        guard let updateButton = firstButton(
+            withTitle: "检查更新",
+            in: documentView
+        ), updateButton.isEnabled else {
+            fputs("About 缺少可用的检查更新按钮\n", stderr)
+            exit(1)
+        }
+        updateButton.performClick(nil)
+        runLoop(for: 0.08)
+        guard updateCheckCount == 1,
+              updateButton.title == "检查更新",
+              updateButton.isEnabled else {
+            fputs("About 没有把检查更新动作交给 Sparkle\n", stderr)
             exit(1)
         }
         try capture(window: window, to: CommandLine.arguments[5])

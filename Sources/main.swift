@@ -618,6 +618,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
     private let audioDevices = AudioDeviceManager()
     private let applicationVolumes = ApplicationVolumeControllerFactory.make()
     private let defaults = UserDefaults.standard
+    private lazy var updaterController = SparkleUpdaterController()
 
     private lazy var customStatusBarIcon: NSImage? = {
         guard let url = Bundle.main.url(
@@ -706,6 +707,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
 
         configureStatusItem()
         observeWorkspace()
+        updaterController.start()
 
         keeper.onStateChange = { [weak self] state in
             self?.apply(keeperState: state)
@@ -2018,6 +2020,9 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
             stopInputTest: { [weak self] in
                 self?.stopMicrophoneTest()
             },
+            checkForUpdates: { [weak self] in
+                self?.updaterController.checkForUpdates()
+            },
             openThirdPartyNotices: { [weak self] in
                 self?.openThirdPartyNotices()
             },
@@ -2102,10 +2107,10 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSMenuDelegate {
 
         let version = Bundle.main.object(
             forInfoDictionaryKey: "CFBundleShortVersionString"
-        ) as? String ?? "2.3"
+        ) as? String ?? "1.0.0"
         let build = Bundle.main.object(
             forInfoDictionaryKey: "CFBundleVersion"
-        ) as? String ?? "30"
+        ) as? String ?? "100"
 
         return MainWindowSnapshot(
             inputDevices: inputSnapshots,

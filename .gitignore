@@ -3,6 +3,7 @@
 .build/
 Build/
 DerivedData/
+Vendor/
 
 *.app
 *.dmg
