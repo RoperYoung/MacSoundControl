@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CFBundleDevelopmentRegion</key>
+    <string>zh_CN</string>
+    <key>CFBundleDisplayName</key>
+    <string>MacSoundControl</string>
+    <key>CFBundleExecutable</key>
+    <string>MacSoundControl</string>
+    <key>CFBundleIconFile</key>
+    <string>AppIcon</string>
+    <key>CFBundleIdentifier</key>
+    <string>cn.neohub.macsoundcontrol</string>
+    <key>CFBundleInfoDictionaryVersion</key>
+    <string>6.0</string>
+    <key>CFBundleName</key>
+    <string>MacSoundControl</string>
+    <key>CFBundlePackageType</key>
+    <string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>2.3</string>
+	<key>CFBundleVersion</key>
+	<string>41</string>
+    <key>LSMinimumSystemVersion</key>
+    <string>14.0</string>
+    <key>LSMultipleInstancesProhibited</key>
+    <true/>
+    <key>LSUIElement</key>
+    <true/>
+    <key>NSHighResolutionCapable</key>
+    <true/>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>用于按你的开关保持当前系统麦克风在线，并在主界面的声音测试区段实时显示输入音量。音频不会被保存、播放或上传。</string>
+	<key>NSAudioCaptureUsageDescription</key>
+	<string>仅在你调节某个软件的独立音量时，本机实时处理该软件的输出声音。音频不会被录制、保存或上传。</string>
+</dict>
+</plist>

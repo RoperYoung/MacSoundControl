@@ -1,0 +1,13 @@
+.DS_Store
+.swiftpm/
+.build/
+Build/
+DerivedData/
+
+*.app
+*.dmg
+*.zip
+*.xcarchive
+*.notary.json
+
+releases/
