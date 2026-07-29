@@ -1,0 +1,28 @@
+<?xml version="1.0" standalone="yes"?>
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
+    <channel>
+        <title>MacSoundControl</title>
+        <item>
+            <title>1.0.0</title>
+            <pubDate>Wed, 29 Jul 2026 15:59:25 +0800</pubDate>
+            <link>https://github.com/RoperYoung/MacSoundControl</link>
+            <sparkle:version>100</sparkle:version>
+            <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[# MacSoundControl 1.0.0
+
+首个公开正式版本。
+
+- 在菜单栏直接切换系统输入和系统输出；
+- 调节系统输出音量与静音；
+- 在 macOS 15 及以上分别控制已注册音频应用的音量；
+- 提供麦克风常驻、虚拟设备显示、开机启动和输入通道重连；
+- 提供实时声音输入测试、百分比与 dBFS；
+- 增加 Sparkle 安全更新，使用 GitHub Pages appcast 与 GitHub Releases 发布包。
+
+系统要求：macOS 14 或更高版本。分应用音量需要 macOS 15 或更高版本。
+]]></description>
+            <enclosure url="https://github.com/RoperYoung/MacSoundControl/releases/download/v1.0.0/MacSoundControl-1.0.0-build100-universal.zip" length="4115667" type="application/octet-stream" sparkle:edSignature="ADKedNzsJoABKEanyHvb4SDOge3ObW9jRryDnlmWDvetTmO4LAJhpgY/z1DopP3PjIka7y4r0rOHuDKmw65tAg=="/>
+        </item>
+    </channel>
+</rss>
