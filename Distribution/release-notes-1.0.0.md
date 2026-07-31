@@ -1,4 +1,4 @@
-# MacSoundControl 1.0.0
+# Mac Sound Control 1.0.0
 
 首个公开正式版本。
 

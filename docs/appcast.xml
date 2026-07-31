@@ -1,7 +1,7 @@
 <?xml version="1.0" standalone="yes"?>
 <rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
     <channel>
-        <title>MacSoundControl</title>
+        <title>Mac Sound Control</title>
         <item>
             <title>1.0.0</title>
             <pubDate>Wed, 29 Jul 2026 15:59:25 +0800</pubDate>
@@ -9,7 +9,7 @@
             <sparkle:version>100</sparkle:version>
             <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[# MacSoundControl 1.0.0
+            <description sparkle:format="markdown"><![CDATA[# Mac Sound Control 1.0.0
 
 首个公开正式版本。
 
@@ -22,7 +22,7 @@
 
 系统要求：macOS 14 或更高版本。分应用音量需要 macOS 15 或更高版本。
 ]]></description>
-            <enclosure url="https://github.com/RoperYoung/MacSoundControl/releases/download/v1.0.0/MacSoundControl-1.0.0.dmg" length="4063521" type="application/octet-stream" sparkle:edSignature="xcKSdu4wsoV7PoFX0xdWuzv8I1W4Fcfhi/ZxW9utoz7Oh6YwZyISnvxGgATBgdcXaGpZWuKX/FL9dlTPV1iiDg=="/>
+            <enclosure url="https://github.com/RoperYoung/MacSoundControl/releases/download/v1.0.0/Mac%20Sound%20Control-1.0.0.dmg" length="4063521" type="application/octet-stream" sparkle:edSignature="xcKSdu4wsoV7PoFX0xdWuzv8I1W4Fcfhi/ZxW9utoz7Oh6YwZyISnvxGgATBgdcXaGpZWuKX/FL9dlTPV1iiDg=="/>
         </item>
     </channel>
 </rss>
