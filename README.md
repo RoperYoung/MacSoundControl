@@ -38,17 +38,28 @@
 
 ## 软件预览
 
-### 分开控制
-
-<p align="center">
-  <img src="docs/images/macsoundcontrol-menu.png" width="520" alt="Mac Sound Control 分开控制模式下的完整菜单栏面板">
-</p>
-
-### 统一控制
-
-<p align="center">
-  <img src="docs/images/macsoundcontrol-main.png" width="520" alt="Mac Sound Control 统一控制模式下的紧凑菜单栏面板">
-</p>
+<table width="100%">
+  <thead>
+    <tr>
+      <th width="50%" align="center">分开控制</th>
+      <th width="50%" align="center">统一控制</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="center" valign="top">
+        <a href="docs/images/macsoundcontrol-menu.png">
+          <img src="docs/images/macsoundcontrol-menu.png" width="400" alt="Mac Sound Control 分开控制模式下的完整菜单栏面板">
+        </a>
+      </td>
+      <td align="center" valign="top">
+        <a href="docs/images/macsoundcontrol-main.png">
+          <img src="docs/images/macsoundcontrol-main.png" width="400" alt="Mac Sound Control 统一控制模式下的紧凑菜单栏面板">
+        </a>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 ---
 
