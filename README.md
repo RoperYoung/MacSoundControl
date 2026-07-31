@@ -18,7 +18,7 @@
 
 <p align="center">
   <a href="https://github.com/RoperYoung/MacSoundControl/releases">
-    <img src="Assets/download-macos-zh.svg" width="280" alt="下载 Mac Sound Control 1.0.0（Build 100）">
+    <img src="Assets/download-macos-zh.svg" width="280" alt="下载 Mac Sound Control 1.0.9（Build 119）">
   </a>
 </p>
 
@@ -67,7 +67,7 @@
 
 Mac Sound Control 是一款原生 macOS 菜单栏工具。你可以在同一个地方切换系统输入与输出、调整系统总音量、分别控制应用音量，并让当前麦克风保持在线。它使用 AppKit 与 CoreAudio 构建，不使用 WebView，也不会在 Dock 中留下多余图标。
 
-当前正式版本为 **1.0.0（Build 100）**，同时支持 Apple Silicon 与 Intel Mac。
+当前正式版本为 **1.0.9（Build 119）**，同时支持 Apple Silicon 与 Intel Mac。
 
 ### 核心能力
 
