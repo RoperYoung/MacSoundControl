@@ -18,7 +18,7 @@
 
 <p align="center">
   <a href="https://github.com/RoperYoung/MacSoundControl/releases">
-    <img src="Assets/download-macos-en.svg" width="280" alt="Download Mac Sound Control 1.0.0 (Build 100)">
+    <img src="Assets/download-macos-en.svg" width="280" alt="Download Mac Sound Control 1.0.9 (Build 119)">
   </a>
 </p>
 
@@ -67,7 +67,7 @@
 
 Mac Sound Control is a native macOS menu bar utility for switching system inputs and outputs, adjusting the main output, controlling application volumes independently, and keeping the current microphone awake. It is built with AppKit and CoreAudio, uses no WebView, and stays out of the Dock.
 
-The current production release is **1.0.0 (Build 100)**, delivered as a Universal app for Apple Silicon and Intel Macs.
+The current production release is **1.0.9 (Build 119)**, delivered as a Universal app for Apple Silicon and Intel Macs.
 
 ### Highlights
 
