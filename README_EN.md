@@ -16,28 +16,14 @@
   <strong>English</strong>
 </p>
 
----
-
-<h2 align="center">⬇️ Download Mac Sound Control</h2>
-
-<p align="center">
-  <strong>Current production release: 1.0.0 (Build 100)</strong>
-</p>
-
 <p align="center">
   <a href="https://github.com/RoperYoung/MacSoundControl/releases">
-    <img src="https://img.shields.io/badge/Go_to_Releases_to_Download-7C3AED?style=for-the-badge&logo=github&logoColor=white" width="320" alt="Go to Releases to download Mac Sound Control">
+    <img src="Assets/download-macos-en.svg" width="280" alt="Download Mac Sound Control 1.0.0 (Build 100)">
   </a>
 </p>
 
 <p align="center">
-  <a href="https://github.com/RoperYoung/MacSoundControl/releases"><strong>Open Releases and choose the latest version</strong></a><br>
-  <sub>Requires macOS 14 or later · Universal for Apple Silicon and Intel Macs</sub>
-</p>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/macOS-14%2B-111827?style=flat-square&logo=apple&logoColor=white" alt="Requires macOS 14 or later">
-  <img src="https://img.shields.io/badge/Universal-Apple%20Silicon%20%2B%20Intel-DB2777?style=flat-square" alt="Universal app for Apple Silicon and Intel">
+  <sub>macOS 14+ · Apple Silicon + Intel · <a href="https://github.com/RoperYoung/MacSoundControl/releases">View all releases</a></sub>
 </p>
 
 ---

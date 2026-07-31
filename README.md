@@ -16,28 +16,14 @@
   <a href="README_EN.md">English</a>
 </p>
 
----
-
-<h2 align="center">⬇️ 下载 Mac Sound Control</h2>
-
-<p align="center">
-  <strong>当前正式版本：1.0.0（Build 100）</strong>
-</p>
-
 <p align="center">
   <a href="https://github.com/RoperYoung/MacSoundControl/releases">
-    <img src="https://img.shields.io/badge/%E5%89%8D%E5%BE%80_Releases_%E4%B8%8B%E8%BD%BD-7C3AED?style=for-the-badge&logo=github&logoColor=white" width="320" alt="前往 Releases 下载 Mac Sound Control">
+    <img src="Assets/download-macos-zh.svg" width="280" alt="下载 Mac Sound Control 1.0.0（Build 100）">
   </a>
 </p>
 
 <p align="center">
-  <a href="https://github.com/RoperYoung/MacSoundControl/releases"><strong>打开 Releases 页面，选择最新版本下载</strong></a><br>
-  <sub>支持 macOS 14 或更高版本 · Apple Silicon 与 Intel Mac</sub>
-</p>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/macOS-14%2B-111827?style=flat-square&logo=apple&logoColor=white" alt="需要 macOS 14 或更高版本">
-  <img src="https://img.shields.io/badge/Universal-Apple%20Silicon%20%2B%20Intel-DB2777?style=flat-square" alt="同时支持 Apple Silicon 与 Intel">
+  <sub>macOS 14+ · Apple Silicon + Intel · <a href="https://github.com/RoperYoung/MacSoundControl/releases">查看全部版本</a></sub>
 </p>
 
 ---
