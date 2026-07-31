@@ -38,17 +38,28 @@
 
 ## Product preview
 
-### Per-app control
-
-<p align="center">
-  <img src="docs/images/macsoundcontrol-menu.png" width="520" alt="Mac Sound Control menu bar panel in per-app volume control mode">
-</p>
-
-### Unified control
-
-<p align="center">
-  <img src="docs/images/macsoundcontrol-main.png" width="520" alt="Mac Sound Control menu bar panel in unified volume control mode">
-</p>
+<table width="100%">
+  <thead>
+    <tr>
+      <th width="50%" align="center">Per-app control</th>
+      <th width="50%" align="center">Unified control</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="center" valign="top">
+        <a href="docs/images/macsoundcontrol-menu.png">
+          <img src="docs/images/macsoundcontrol-menu.png" width="400" alt="Mac Sound Control menu bar panel in per-app volume control mode">
+        </a>
+      </td>
+      <td align="center" valign="top">
+        <a href="docs/images/macsoundcontrol-main.png">
+          <img src="docs/images/macsoundcontrol-main.png" width="400" alt="Mac Sound Control menu bar panel in unified volume control mode">
+        </a>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 ---
 
