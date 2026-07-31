@@ -6,6 +6,7 @@
 # Repository landing page and notices.
 !.gitignore
 !README.md
+!README_EN.md
 !THIRD_PARTY_NOTICES.md
 !使用说明.md
 

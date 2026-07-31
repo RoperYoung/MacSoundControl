@@ -1,67 +1,72 @@
 <a id="readme-top"></a>
 
 <p align="center">
-  <img src="Assets/AppIcon.png" width="116" height="116" alt="Mac Sound Control app icon">
+  <img src="Assets/AppIcon.png" width="116" height="116" alt="Mac Sound Control 应用图标">
 </p>
 
 <h1 align="center">Mac Sound Control</h1>
 
 <p align="center">
-  <strong>One native panel for every layer of Mac audio.</strong><br>
-  一个原生面板，集中控制 Mac 的系统声音、应用音量与麦克风。
+  <strong>一个原生面板，集中控制 Mac 的系统声音、应用音量与麦克风。</strong>
 </p>
 
 <p align="center">
-  <a href="https://github.com/RoperYoung/MacSoundControl/releases/download/v1.0.0/Mac-Sound-Control-1.0.0.dmg">
-    <img src="https://img.shields.io/badge/Download-v1.0.0-7C3AED?style=for-the-badge&logo=github&logoColor=white" alt="Download Mac Sound Control 1.0.0">
+  <strong>简体中文</strong>
+  &nbsp;·&nbsp;
+  <a href="README_EN.md">English</a>
+</p>
+
+---
+
+<h2 align="center">⬇️ 下载 Mac Sound Control</h2>
+
+<p align="center">
+  <strong>当前正式版本：1.0.0（Build 100）</strong>
+</p>
+
+<p align="center">
+  <a href="https://github.com/RoperYoung/MacSoundControl/releases">
+    <img src="https://img.shields.io/badge/%E5%89%8D%E5%BE%80_Releases_%E4%B8%8B%E8%BD%BD-7C3AED?style=for-the-badge&logo=github&logoColor=white" height="52" alt="前往 Releases 下载 Mac Sound Control">
   </a>
-  <img src="https://img.shields.io/badge/macOS-14%2B-111827?style=for-the-badge&logo=apple&logoColor=white" alt="Requires macOS 14 or later">
-  <img src="https://img.shields.io/badge/Universal-Apple%20Silicon%20%2B%20Intel-DB2777?style=for-the-badge" alt="Universal app for Apple Silicon and Intel">
 </p>
 
 <p align="center">
-  <a href="#简体中文">简体中文</a>
-  &nbsp;·&nbsp;
-  <a href="#english">English</a>
-  &nbsp;·&nbsp;
-  <a href="https://github.com/RoperYoung/MacSoundControl/releases">Releases</a>
-  &nbsp;·&nbsp;
-  <a href="#隐私--privacy">Privacy</a>
+  <a href="https://github.com/RoperYoung/MacSoundControl/releases"><strong>打开 Releases 页面，选择最新版本下载</strong></a><br>
+  <sub>支持 macOS 14 或更高版本 · Apple Silicon 与 Intel Mac</sub>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/macOS-14%2B-111827?style=flat-square&logo=apple&logoColor=white" alt="需要 macOS 14 或更高版本">
+  <img src="https://img.shields.io/badge/Universal-Apple%20Silicon%20%2B%20Intel-DB2777?style=flat-square" alt="同时支持 Apple Silicon 与 Intel">
 </p>
 
 ---
 
-## Built for everyday audio work
+## 为日常音频工作而生
 
-| System & apps | Devices |
+| 系统与应用 | 设备 |
 | --- | --- |
-| Control the main output and each application's volume from one place. | Switch built-in, Bluetooth, USB, display, AirPlay, Continuity, and virtual devices. |
-| **Microphone** | **Native & private** |
-| Keep the current input awake and inspect its live level when needed. | AppKit + CoreAudio, no WebView, no account, no telemetry, and no audio upload. |
+| 在一个地方调节系统主输出，并分别控制每个应用的音量。 | 切换内建、蓝牙、USB、显示器、AirPlay、连续互通与虚拟音频设备。 |
+| **麦克风** | **原生与私密** |
+| 让当前输入保持在线，并在需要时查看实时输入电平。 | AppKit + CoreAudio，无 WebView、无账号、无遥测，也不会上传音频。 |
 
-## Product preview / 软件预览
+## 软件预览
 
-### Per-app control / 分开控制
+### 分开控制
 
 <p align="center">
-  <img src="docs/images/macsoundcontrol-menu.png" width="520" alt="Mac Sound Control menu bar panel in per-app volume control mode">
+  <img src="docs/images/macsoundcontrol-menu.png" width="520" alt="Mac Sound Control 分开控制模式下的完整菜单栏面板">
 </p>
 
-### Unified control / 统一控制
+### 统一控制
 
 <p align="center">
-  <img src="docs/images/macsoundcontrol-main.png" width="520" alt="Mac Sound Control menu bar panel in unified volume control mode">
+  <img src="docs/images/macsoundcontrol-main.png" width="520" alt="Mac Sound Control 统一控制模式下的紧凑菜单栏面板">
 </p>
 
 ---
 
-<a id="简体中文"></a>
-
-## 简体中文
-
-[English](#english) · [返回顶部](#readme-top)
-
-### 把日常声音控制收进一个原生面板
+## 产品介绍
 
 Mac Sound Control 是一款原生 macOS 菜单栏工具。你可以在同一个地方切换系统输入与输出、调整系统总音量、分别控制应用音量，并让当前麦克风保持在线。它使用 AppKit 与 CoreAudio 构建，不使用 WebView，也不会在 Dock 中留下多余图标。
 
@@ -89,7 +94,7 @@ Mac Sound Control 是一款原生 macOS 菜单栏工具。你可以在同一个�
 
 ### 安装
 
-1. 下载 [`Mac-Sound-Control-1.0.0.dmg`](https://github.com/RoperYoung/MacSoundControl/releases/download/v1.0.0/Mac-Sound-Control-1.0.0.dmg)。
+1. 打开 [GitHub Releases](https://github.com/RoperYoung/MacSoundControl/releases)，下载最新的 DMG。
 2. 打开 DMG，将应用拖入“应用程序”文件夹。
 3. 启动应用，并按实际使用的功能授予麦克风或系统音频权限。
 4. 点击菜单栏中的扬声器图标开始使用。
@@ -105,8 +110,6 @@ Mac Sound Control 是一款原生 macOS 菜单栏工具。你可以在同一个�
 - Sparkle EdDSA 更新签名。
 
 发现新版本后，Sparkle 会先征得你的同意；应用默认不会静默安装更新。
-
-<a id="隐私--privacy"></a>
 
 ### 隐私
 
@@ -127,72 +130,8 @@ Mac Sound Control 当前不作为开源软件发布。请只从本项目的 [Git
 
 ---
 
-<a id="english"></a>
-
-## English
-
-[简体中文](#简体中文) · [Back to top](#readme-top)
-
-### Everyday Mac audio, in one native panel
-
-Mac Sound Control is a native macOS menu bar utility for switching system inputs and outputs, adjusting the main output, controlling application volumes independently, and keeping the current microphone awake. It is built with AppKit and CoreAudio, uses no WebView, and stays out of the Dock.
-
-The current production release is **1.0.0 (Build 100)**, delivered as a Universal app for Apple Silicon and Intel Macs.
-
-### Highlights
-
-- **System audio** — adjust the current output and toggle mute.
-- **Per-app volume** — save and control each audio application's `0...100%` level on macOS 15 or later.
-- **Device switching** — recognize built-in, Bluetooth, USB, display, AirPlay, Continuity, and virtual audio devices.
-- **Mic keep-alive** — reduce wake-up delays on some Bluetooth and wireless microphones.
-- **Input test** — inspect live input with a 36-segment meter, percentage, and relative `dBFS` value.
-- **Native updates** — let Sparkle verify, download, replace, and relaunch the app.
-
-### Requirements and permissions
-
-| Capability | Requirement |
-| --- | --- |
-| Device switching, system volume, mic keep-alive, and input test | macOS 14 or later |
-| Per-application volume | macOS 15 or later |
-| Mic keep-alive and input test | Microphone permission |
-| Per-application volume | Screen & System Audio Recording permission in System Settings |
-
-> HDMI, DisplayPort, and some external devices do not expose a writable main-volume property. The app can still switch to them, but volume must be adjusted on the display, amplifier, or device itself.
-
-### Install
-
-1. Download [`Mac-Sound-Control-1.0.0.dmg`](https://github.com/RoperYoung/MacSoundControl/releases/download/v1.0.0/Mac-Sound-Control-1.0.0.dmg).
-2. Open the DMG and drag the app into Applications.
-3. Launch the app and grant microphone or system-audio access only for the features you use.
-4. Click the speaker icon in the menu bar.
-
-The production app and DMG are signed with Apple Developer ID, notarized by Apple, and stapled with their notarization tickets.
-
-### Secure updates
-
-Sparkle 2.9.4 reads a static update feed hosted on GitHub Pages. You can also check manually from the About section. Every update is protected by:
-
-- Apple Developer ID signing;
-- Apple notarization;
-- Sparkle EdDSA update signing.
-
-Sparkle asks before installing an available update; silent installation is disabled by default.
-
-### Privacy
-
-- Microphone and application audio are processed only in memory on the current Mac.
-- Audio is never recorded, written to disk, played back, uploaded, or used for speech recognition.
-- The app has no account system, telemetry, custom backend, write API, or database.
-- Network access is limited to reading the static update feed and downloading a GitHub Release after you approve it.
-
-### Repository and source code
-
-This is the official product and release repository for Mac Sound Control. It contains product information, real runtime screenshots, the update feed, release notes, and third-party notices. Application source code, tests, build configuration, signing material, and notarization tooling are not included, so the app cannot be rebuilt from this repository.
-
-Mac Sound Control is not currently distributed as open-source software. Download only maintainer-signed and Apple-notarized builds from this project's [GitHub Releases](https://github.com/RoperYoung/MacSoundControl/releases).
-
-### Third-party notices
-
-Official builds include MacMix-derived portions and Sparkle under their respective licenses. See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) for details.
-
-<p align="right"><a href="#readme-top">Back to top / 返回顶部</a></p>
+<p align="center">
+  <a href="README_EN.md">English version</a>
+  &nbsp;·&nbsp;
+  <a href="#readme-top">返回顶部</a>
+</p>
