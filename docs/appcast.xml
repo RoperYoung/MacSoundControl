@@ -22,7 +22,7 @@
 
 系统要求：macOS 14 或更高版本。分应用音量需要 macOS 15 或更高版本。
 ]]></description>
-            <enclosure url="https://github.com/RoperYoung/MacSoundControl/releases/download/v1.0.0/Mac%20Sound%20Control-1.0.0.dmg" length="4063521" type="application/octet-stream" sparkle:edSignature="xcKSdu4wsoV7PoFX0xdWuzv8I1W4Fcfhi/ZxW9utoz7Oh6YwZyISnvxGgATBgdcXaGpZWuKX/FL9dlTPV1iiDg=="/>
+            <enclosure url="https://github.com/RoperYoung/MacSoundControl/releases/download/v1.0.0/Mac-Sound-Control-1.0.0.dmg" length="4063521" type="application/octet-stream" sparkle:edSignature="xcKSdu4wsoV7PoFX0xdWuzv8I1W4Fcfhi/ZxW9utoz7Oh6YwZyISnvxGgATBgdcXaGpZWuKX/FL9dlTPV1iiDg=="/>
         </item>
     </channel>
 </rss>

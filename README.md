@@ -12,7 +12,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/RoperYoung/MacSoundControl/releases/download/v1.0.0/Mac%20Sound%20Control-1.0.0.dmg">
+  <a href="https://github.com/RoperYoung/MacSoundControl/releases/download/v1.0.0/Mac-Sound-Control-1.0.0.dmg">
     <img src="https://img.shields.io/badge/Download-v1.0.0-7C3AED?style=for-the-badge&logo=github&logoColor=white" alt="Download Mac Sound Control 1.0.0">
   </a>
   <img src="https://img.shields.io/badge/macOS-14%2B-111827?style=for-the-badge&logo=apple&logoColor=white" alt="Requires macOS 14 or later">
@@ -89,7 +89,7 @@ Mac Sound Control 是一款原生 macOS 菜单栏工具。你可以在同一个�
 
 ### 安装
 
-1. 下载 [`Mac Sound Control-1.0.0.dmg`](https://github.com/RoperYoung/MacSoundControl/releases/download/v1.0.0/Mac%20Sound%20Control-1.0.0.dmg)。
+1. 下载 [`Mac-Sound-Control-1.0.0.dmg`](https://github.com/RoperYoung/MacSoundControl/releases/download/v1.0.0/Mac-Sound-Control-1.0.0.dmg)。
 2. 打开 DMG，将应用拖入“应用程序”文件夹。
 3. 启动应用，并按实际使用的功能授予麦克风或系统音频权限。
 4. 点击菜单栏中的扬声器图标开始使用。
@@ -161,7 +161,7 @@ The current production release is **1.0.0 (Build 100)**, delivered as a Universa
 
 ### Install
 
-1. Download [`Mac Sound Control-1.0.0.dmg`](https://github.com/RoperYoung/MacSoundControl/releases/download/v1.0.0/Mac%20Sound%20Control-1.0.0.dmg).
+1. Download [`Mac-Sound-Control-1.0.0.dmg`](https://github.com/RoperYoung/MacSoundControl/releases/download/v1.0.0/Mac-Sound-Control-1.0.0.dmg).
 2. Open the DMG and drag the app into Applications.
 3. Launch the app and grant microphone or system-audio access only for the features you use.
 4. Click the speaker icon in the menu bar.
