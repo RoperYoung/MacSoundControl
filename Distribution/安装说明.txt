@@ -1,0 +1,29 @@
+MacSoundControl 1.0.0（Build 100）
+
+安装：
+1. 打开 MacSoundControl-1.0.0.dmg。
+2. 将“MacSoundControl.app”拖入“应用程序”文件夹。
+3. 从“应用程序”中启动 MacSoundControl。
+4. 按实际使用的功能授予麦克风或“屏幕与系统音频录制”权限。
+
+当前正式版同时支持 Apple Silicon 与 Intel Mac。DMG 与应用均已使用 Apple Developer ID 签名、通过 Apple 公证，并装订公证票据。
+
+系统要求：
+- macOS 14 或更高版本：设备切换、系统音量、麦克风常驻与声音输入测试。
+- macOS 15 或更高版本：分应用音量控制。
+
+主要功能：
+- 从菜单栏切换系统输入和输出设备。
+- 调节系统输出音量与静音状态。
+- 单独保存和控制每个应用的音量。
+- 让当前麦克风保持在线，并实时测试输入电平。
+- 支持开机启动、虚拟设备显示和输入通道重连。
+- 通过 Sparkle 安全检查并安装后续版本。
+
+隐私：
+- 麦克风与应用音频只在当前 Mac 的内存中实时处理。
+- 音频不会录制、写入磁盘、播放、上传或用于语音识别。
+- 网络访问仅用于读取静态更新清单，并在用户确认后下载 GitHub Release 更新包。
+
+官方发布页：
+https://github.com/RoperYoung/MacSoundControl/releases
