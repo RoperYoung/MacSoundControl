@@ -1,9 +1,9 @@
-Mac Sound Control 1.0.0（Build 100）
+Mac Sound Control 1.0.9（Build 119）
 
 安装：
-1. 打开 Mac-Sound-Control-1.0.0.dmg。
-2. 将“MacSoundControl.app”拖入“应用程序”文件夹。
-3. 从“应用程序”中启动 MacSoundControl。
+1. 打开 Mac-Sound-Control-1.0.9.dmg。
+2. 将“Mac Sound Control.app”拖入“应用程序”文件夹。
+3. 从“应用程序”中启动 Mac Sound Control；手动打开时主界面会自动置前。
 4. 按实际使用的功能授予麦克风或“屏幕与系统音频录制”权限。
 
 当前正式版同时支持 Apple Silicon 与 Intel Mac。DMG 与应用均已使用 Apple Developer ID 签名、通过 Apple 公证，并装订公证票据。
@@ -19,6 +19,10 @@ Mac Sound Control 1.0.0（Build 100）
 - 让当前麦克风保持在线，并实时测试输入电平。
 - 支持开机启动、虚拟设备显示和输入通道重连。
 - 通过 Sparkle 安全检查并安装后续版本。
+
+首次打开：
+- 主界面顶部会提示日常操作入口，并可直接打开菜单栏控制。
+- 日常使用请点击屏幕顶部菜单栏中的扬声器图标。
 
 隐私：
 - 麦克风与应用音频只在当前 Mac 的内存中实时处理。
