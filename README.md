@@ -41,16 +41,16 @@
 
 ## Product preview / 软件预览
 
-### Main window / 主界面
+### Per-app control / 分开控制
 
 <p align="center">
-  <img src="docs/images/macsoundcontrol-main.png" width="920" alt="Mac Sound Control native main window with audio controls">
+  <img src="docs/images/macsoundcontrol-menu.png" width="520" alt="Mac Sound Control menu bar panel in per-app volume control mode">
 </p>
 
-### Menu bar panel / 菜单栏控制面板
+### Unified control / 统一控制
 
 <p align="center">
-  <img src="docs/images/macsoundcontrol-menu.png" width="440" alt="Mac Sound Control complete menu bar panel">
+  <img src="docs/images/macsoundcontrol-main.png" width="520" alt="Mac Sound Control menu bar panel in unified volume control mode">
 </p>
 
 ---
