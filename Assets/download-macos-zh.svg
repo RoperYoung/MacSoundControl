@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="280" height="62" viewBox="0 0 280 62" role="img" aria-labelledby="title desc">
+  <title id="title">下载 Mac Sound Control</title>
+  <desc id="desc">版本 1.0.0 Build 100，Universal macOS 应用</desc>
+  <rect x="0.5" y="0.5" width="279" height="61" rx="12" fill="#24292F" stroke="#57606A"/>
+  <rect x="15" y="14" width="34" height="34" rx="9" fill="#E85D3F"/>
+  <path d="M32 21.5v14m0 0-5.5-5.5M32 35.5l5.5-5.5M24.5 40.5h15" fill="none" stroke="#FFFFFF" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="62" y="27" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="17" font-weight="650">下载 Mac 版</text>
+  <text x="62" y="45" fill="#AFB8C1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11.5" font-weight="500">v1.0.0 (Build 100) · Universal</text>
+</svg>
