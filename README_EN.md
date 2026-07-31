@@ -26,7 +26,7 @@
 
 <p align="center">
   <a href="https://github.com/RoperYoung/MacSoundControl/releases">
-    <img src="https://img.shields.io/badge/Go_to_Releases_to_Download-7C3AED?style=for-the-badge&logo=github&logoColor=white" height="52" alt="Go to Releases to download Mac Sound Control">
+    <img src="https://img.shields.io/badge/Go_to_Releases_to_Download-7C3AED?style=for-the-badge&logo=github&logoColor=white" width="320" alt="Go to Releases to download Mac Sound Control">
   </a>
 </p>
 
